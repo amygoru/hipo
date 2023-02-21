@@ -85,7 +85,7 @@ p.Count_Down span {
     border-radius: 10px;
     margin-right: 4px;
     background: #e8e8e8;
-    font-size: 24px;
+    font-size: 17px;
 }
 span.num {
     background: none !important;
@@ -157,6 +157,7 @@ button.enter_value {
     /* width: 14%; */
     margin: 0px 6px;
     text-align: center;
+    border: none;
     font-size: 14px;
     color: #fff;
     border-radius: 2px;
@@ -172,5 +173,11 @@ button.enter_value {
     display: flex;
 }
 .input_value {
-    margin-top: 46px;
+    margin: 31px 26px 0px 26px;
+    /* margin-top: 46px; */
+}
+
+.green_header.modal-header {
+    background: #4caf50;
+    color: #fff;
 }

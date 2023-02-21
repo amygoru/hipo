@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Win.css'
 import Winnavbar from './Winnavbar'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { GiTargetPrize } from "react-icons/gi";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 const Win = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <Winnavbar />
@@ -53,7 +59,7 @@ const Win = () => {
         </div>
       </div>
       <div className='join_btns'>
-        <button className='join_green'> Join Green </button>
+        <button onClick={handleShow} className='join_green'> Join Green </button>
         <button className=' Join_Violet '>  Join Violet  </button>
         <button className='join_red'> Join Red </button>
 
@@ -78,6 +84,26 @@ const Win = () => {
         </div>
 
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header className='green_header' closeButton>
+          <Modal.Title >Join Green</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p className='title_dash'>Total：{ }</p>
+          <p className='title_dash'>Today Rebates：₹ ：{ }</p>
+          <p className='title_dash'>Total Rebates：₹ ：{ }</p>
+          <p className='title_dash'>Status：{ }</p>
+
+        </Modal.Body>
+        <Modal.Footer>
+        {/* <Button style={{color:'#00897b',marginRight:"10px"}}>
+                       CANCEL
+                    </Button> */}
+                    <Button className='signin' style={{color:'#00897b'}}>
+                        SIGN IN
+                    </Button>
+                </Modal.Footer>
+      </Modal>
     </>
   )
 }
