@@ -6,9 +6,14 @@ import Tabs from 'react-bootstrap/Tabs';
 import { GiTargetPrize } from "react-icons/gi";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
+import MyVerticallyCenteredModal from './MyVerticallyCenteredModal';
+import Tablerecord from './Tablerecord'
+import MyRecord from './MyRecord';
+
 const Win = () => {
   const [show, setShow] = useState(false);
-
+  const [modalShow, setModalShow] = React.useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -68,42 +73,46 @@ const Win = () => {
       <div className='input_value'>
         <div className='first_row'>
 
-        <button className='enter_value'>0</button>
-        <button className='enter_value'>1</button>
-        <button className='enter_value'>2</button>
-        <button className='enter_value'>3</button>
-        <button className='enter_value'>4</button>
+          <button className='enter_value'>0</button>
+          <button className='enter_value'>1</button>
+          <button className='enter_value'>2</button>
+          <button className='enter_value'>3</button>
+          <button className='enter_value'>4</button>
 
         </div>
         <div className='secound_row'>
-        <button className='enter_value'>5</button>
-        <button className='enter_value'>6</button>
-        <button className='enter_value'>7</button>
-        <button className='enter_value'>8</button>
-        <button className='enter_value'>9</button>
+          <button className='enter_value'>5</button>
+          <button className='enter_value'>6</button>
+          <button className='enter_value'>7</button>
+          <button className='enter_value'>8</button>
+          <button className='enter_value'>9</button>
         </div>
 
       </div>
-      <Modal show={show} onHide={handleClose}>
+      <Modal  size="lg" show={show} onHide={handleClose}>
         <Modal.Header className='green_header' closeButton>
           <Modal.Title >Join Green</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p className='title_dash'>Total：{ }</p>
-          <p className='title_dash'>Today Rebates：₹ ：{ }</p>
-          <p className='title_dash'>Total Rebates：₹ ：{ }</p>
-          <p className='title_dash'>Status：{ }</p>
-
+          <p className='title_dash'>Contract Money</p>
+          <p className='title_dash'>Total contract money is 10</p>
+          <span className='wrap_checkbox'>  <Form.Check aria-label="option 1" /><span class="checkbox_cus">I agree <span onClick={() => setModalShow(true)} class="rule">PRESALE RULE</span></span></span>
         </Modal.Body>
         <Modal.Footer>
-        {/* <Button style={{color:'#00897b',marginRight:"10px"}}>
-                       CANCEL
-                    </Button> */}
-                    <Button className='signin' style={{color:'#00897b'}}>
-                        SIGN IN
-                    </Button>
-                </Modal.Footer>
+          <Button closeButton onClick={handleClose} style={{ color: '#00897b', marginRight: "10px", fontSize: "" }}>
+            CANCEL
+          </Button>
+          <Button className='signin' style={{ color: '#00897b' }}>
+            SIGN IN
+          </Button>
+        </Modal.Footer>
       </Modal>
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+      <Tablerecord />
+      <MyRecord/>
     </>
   )
 }

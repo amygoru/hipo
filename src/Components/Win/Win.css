@@ -181,3 +181,46 @@ button.enter_value {
     background: #4caf50;
     color: #fff;
 }
+span.wrap_checkbox {
+    display: flex;
+}
+span.checkbox_cus {
+    margin-left: 10px;
+}
+span.rule {
+    color: #009688;
+    font-weight: 400;
+}
+h5.c_heading {
+    color: #009688;
+    font-weight: 400;
+}
+.c_58{
+    color: #009688;
+}
+.header_pri.modal-header {
+    /* font-size: 24px; */
+    padding: 15px;
+    box-sizing: border-box;
+    background: #e0e0e0;
+    color: rgba(0,0,0,.87);
+}
+span.c_red svg {
+    color: red;
+    height: 32px;
+}
+.p_records {
+    text-align: center;
+}
+.p_records img {
+    height: 27px;
+    margin-top: 21px;
+}
+.p_records svg {
+    font-size: 29px;
+    color: #757575;
+}
+.toggle_cus {
+    color: #757575;
+    margin: 52px 0px;
+}
