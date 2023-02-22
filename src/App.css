@@ -14,7 +14,10 @@ span.nav_icon {
   pointer-events: none;
 }
 .sections_login {
-  padding: 11px 0px;
+  padding: 4px 0px;
+  align-items: baseline;
+  font-weight: 400;
+  display: flex;
   color: #fff;
   background: #009688;
 }
@@ -13238,4 +13241,10 @@ input[type=number] {
   transform: scale(10);
   opacity: 0;
   transition: transform .3s,opacity .5s;
+}
+span.nav_icon svg {
+    font-size: 27px;
+}
+span.nav_path {
+  font-size: 23px;
 }

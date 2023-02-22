@@ -13,6 +13,10 @@ import Resetpassword from './Components/Resetpassword/Resetpassword';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';  
 import Mine from './Components/mine/Mine';
+import Recharge from './Components/Recharge/Recharge';
+import Recharge_Record from './Components/Recharge/Recharge_Record';
+import TendParity from './Components/TendParity/TendParity';
+import Orders from './Components/Orders/Orders';
 function App() {
   return (
     <div className="App">
@@ -26,7 +30,11 @@ function App() {
           <Route path="/login-nav" element={<Navlogin />}/>
           <Route path="/register" element={<Register />}/>
           <Route path="/resetpassword" element={<Resetpassword />}/>
-          <Route path="/mine" element={<Mine />}>
+          <Route path="/mine" element={<Mine />}/>
+          <Route path="/recharge" element={<Recharge />}/>
+          <Route path="/Recharge_Record" element={<Recharge_Record />}/>
+          <Route path="/TendParity" element={<TendParity />}/>
+          <Route path="/Orders" element={<Orders />}>
           </Route>
         </Routes>
       </BrowserRouter>

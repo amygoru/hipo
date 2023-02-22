@@ -1,0 +1,145 @@
+.van-nav-bar {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 46px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #fff;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.parity-content .kline {
+    padding: 5px 12px 0;
+}
+.reservation-chunk {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.reservation-chunk-sub {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.reservation-chunk-sub-title {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #7d7d7d;
+}
+.reservation-chunk-sub-num {
+    font-size: 24px;
+}
+.time{
+    display: inline-flex;
+}
+span.time-sub-dot {
+    padding: 0 3px;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+span.time-sub {
+    margin: 0 2px;
+    padding: 0 4px;
+    font-size: 24px;
+    background: #f2f2f2;
+    color: #0f1223;
+    border-radius: 5px;
+}
+.parity-content .kline {
+    padding: 5px 12px 0;
+}
+.reservation-chunk {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.reservation-chunk-sub {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.reservation-chunk-sub-title {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #7d7d7d;
+}
+.reservation-chunk-sub-title {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #7d7d7d;
+}
+.item-green {
+    background: #157239;
+}
+.item-green, .item-red {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+.reservation-chunk-sub-num {
+    font-size: 24px;
+}
+.reservation-chunk-sub-num div {
+    font-size: 24px;
+}
+.parity-content .kline .box {
+    overflow: scroll;
+    width: 100%;
+    line-height: 40px;
+}
+.parity-content .kline .grid {
+    display: inline-grid;
+    width: auto;
+    padding-bottom: 20px;
+    border: 1px solid #eee;
+}
+.parity-content .kline .box .row .index {
+    width: 40px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    left: 12px;
+    border: 1px solid #eee;
+}
+.parity-content .kline .box .row .cell {
+    padding: 10px;
+    border-left: 1px solid #eee;
+}
+.item-green, .item-red {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    color: #fff;
+}
+.item-green {
+    background: #157239;
+}
+.item-red {
+    background: #f52827;
+}
+.item-violet-green {
+    background-image: linear-gradient(-90deg, #e839f1 10px, #157239 0);
+}
+.border {
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
