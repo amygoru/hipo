@@ -222,5 +222,74 @@ span.c_red svg {
 }
 .toggle_cus {
     color: #757575;
-    margin: 52px 0px;
+    padding: 11px 26px;
+    margin: 56px 0px;
+    border-top: 3px solid #009688;
+}
+.Collapsible {
+    padding: 0px;
+    margin: 0px;
+    width: 97%;
+}
+span#collapsible-trigger-1677039274253 {
+    display: flex;
+    width: 100%;
+}
+.myParity .myParity_title {
+    color: #009688;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.myParity ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.myParity ul li ol{
+    width: 50%;
+    text-align: left;
+    font-size: 12px;
+    color: rgba(0,0,0,.87);
+}
+.myParity_btn {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.myParity_btn button {
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    background: #009688;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.myParity ul {
+    padding: 0px;
+}
+span#collapsible-trigger-1677039274253 {
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    margin-left: 25px;
+    color: #000000ad;
+    font-size: 16px;
+}
+span.kd_t5 {
+    position: absolute;
+    overflow: visible;
+    /* left: 12%; */
+    transform: translate(99px, -1px);
+}
+span.res_text {
+    color: red;
+}
+.main_wrap_f {
+    display: flex;
 }
