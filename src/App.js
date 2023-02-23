@@ -17,6 +17,9 @@ import Recharge from './Components/Recharge/Recharge';
 import Recharge_Record from './Components/Recharge/Recharge_Record';
 import TendParity from './Components/TendParity/TendParity';
 import Orders from './Components/Orders/Orders';
+import Reward from './Components/Reward/Reward';
+import Promotion from './Components/Promotion/Promotion';
+import Bonus from './Components/Bonus/Bonus';
 function App() {
   return (
     <div className="App">
@@ -34,7 +37,10 @@ function App() {
           <Route path="/recharge" element={<Recharge />}/>
           <Route path="/Recharge_Record" element={<Recharge_Record />}/>
           <Route path="/TendParity" element={<TendParity />}/>
-          <Route path="/Orders" element={<Orders />}>
+          <Route path="/Orders" element={<Orders />}/>
+          <Route path="/Reward" element={<Reward />}/>
+          <Route path="/Promotion" element={<Promotion />}/>
+          <Route path="/Bonus" element={<Bonus />}>
           </Route>
         </Routes>
       </BrowserRouter>

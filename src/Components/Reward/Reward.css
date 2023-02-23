@@ -1,0 +1,38 @@
+.completed_list .list_box {
+    padding: 0 0 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* .list_box li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+} */
+.list_box li ol p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.list_box li ol .oddnum {
+    color: #757575;
+}
+.list_box li ol .times {
+    color: #757575;
+    font-size: 12px;
+}
+
+.list_box li ol .icon img {
+    width: 20px;
+    height: 20px;
+}
+.list_box li ol {
+    display: flex;
+    margin: 7px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ol.bold_cus {
+    font-size: 18px !important;
+    font-weight: 600;
+}
