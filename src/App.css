@@ -13248,3 +13248,13 @@ span.nav_icon svg {
 span.nav_path {
   font-size: 23px;
 }
+
+.balance_av_text_withrawal {
+    font-size: 2rem;
+}
+.tips {
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    padding: 10px 0;
+    text-align: center;
+}

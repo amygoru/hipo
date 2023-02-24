@@ -1,64 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Promotion.css'
 import { MDBDataTable } from 'mdbreact';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 const Promotion_content = () => {
-    const data = {
-      columns: [
-        {
-          label: 'ID',
-          field: 'ID',
-          sort: 'asc',
-          width: 150
-        },
-        {
-          label: 'Phone',
-          field: 'Phone',
-          sort: 'asc',
-          width: 270
-        },
-        {
-          label: 'Water_reward',
-          field: 'Water_reward',
-          sort: 'asc',
-          width: 200
-        },
-        {
-          label: 'First_reward',
-          field: 'First_reward',
-          sort: 'asc',
-          width: 100
-        }
-       
-      ],
-      rows: [
-        {
-          ID: '705',
-          Phone: '7087376726',
-          Water_reward : 'Edinburgh',
-          First_reward: '61',
-        },
-        {
-          ID: '705',
-          Phone: '7087376726',
-          Water_reward : 'Edinburgh',
-          First_reward: '61',
-        }
-        ,
-        {
-          ID: '705',
-          Phone: '7087376726',
-          Water_reward : 'Edinburgh',
-          First_reward: '61',
-        },
-        {
-          ID: '705',
-          Phone: '7087376726',
-          Water_reward : 'Edinburgh',
-          First_reward: '61',
-        }
-      ]
-    };
-  
+
+  const [show, setShow] = useState(false);
+  const [modalShow, setModalShow] = React.useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const data = {
+    columns: [
+      {
+        label: 'ID',
+        field: 'ID',
+        sort: 'asc',
+        width: 150
+      },
+      {
+        label: 'Phone',
+        field: 'Phone',
+        sort: 'asc',
+        width: 270
+      },
+      {
+        label: 'Water_reward',
+        field: 'Water_reward',
+        sort: 'asc',
+        width: 200
+      },
+      {
+        label: 'First_reward',
+        field: 'First_reward',
+        sort: 'asc',
+        width: 100
+      }
+
+    ],
+    rows: [
+      {
+        ID: '705',
+        Phone: '7087376726',
+        Water_reward: 'Edinburgh',
+        First_reward: '61',
+      },
+      {
+        ID: '705',
+        Phone: '7087376726',
+        Water_reward: 'Edinburgh',
+        First_reward: '61',
+      }
+      ,
+      {
+        ID: '705',
+        Phone: '7087376726',
+        Water_reward: 'Edinburgh',
+        First_reward: '61',
+      },
+      {
+        ID: '705',
+        Phone: '7087376726',
+        Water_reward: 'Edinburgh',
+        First_reward: '61',
+      }
+    ]
+  };
+
   return (
     <>
       <div class="container">
@@ -88,13 +95,57 @@ const Promotion_content = () => {
           </div>
         </div>
       </div>
-      <div className='table_cus_5d'>
-      <MDBDataTable
-      striped
-      bordered
-      small
-      data={data}
-    />
+      <div>
+        <Tabs
+          defaultActiveKey="profile"
+          // id="fill-tab-example"
+          className="mb-4 tab_cus_is"
+          fill
+        >
+          <Tab eventKey="home" title=" Level 1 ">
+            <div className='table_cus_5d'>
+              <MDBDataTable
+                striped
+                bordered
+                small
+                data={data}
+              />
+            </div>
+          </Tab>
+          <Tab eventKey="profile" title=" Level 2 ">
+            <div className='table_cus_5d'>
+              <MDBDataTable
+                striped
+                bordered
+                small
+                data={data}
+              />
+            </div>
+
+          </Tab>
+          <Tab eventKey="longer-tab" title=" Level 3 ">
+            <div className='table_cus_5d'>
+              <MDBDataTable
+                striped
+                bordered
+                small
+                data={data}
+              />
+            </div>
+
+          </Tab>
+          <Tab eventKey="contact" title=" Level 4 " >
+            <div className='table_cus_5d'>
+              <MDBDataTable
+                striped
+                bordered
+                small
+                data={data}
+              />
+            </div>
+
+          </Tab>
+        </Tabs>
       </div>
     </>
   )

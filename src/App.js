@@ -20,6 +20,17 @@ import Orders from './Components/Orders/Orders';
 import Reward from './Components/Reward/Reward';
 import Promotion from './Components/Promotion/Promotion';
 import Bonus from './Components/Bonus/Bonus';
+import ApplyRecord from './Components/ApplyRecord/ApplyRecord';
+import RedEnvelope from './Components/RedEnvelope/RedEnvelope';
+import Withdrawal from './Components/Withdrawal/Withdrawal';
+import AddBankCard from './Components/AddBankCard/AddBankCard';
+import Transactions from './Components/Transactions/Transactions';
+import Bankcard from './Components/Bankcard/Bankcard';
+import AddAddress from './Components/Address/AddAddress';
+import Complaints from './Components/Complaints&Suggestions/Complaints';
+import AddComplaints from './Components/Complaints&Suggestions/AddComplaints';
+import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy';
+import RiskDisclosure from './Components/RiskDisclosure/RiskDisclosure';
 function App() {
   return (
     <div className="App">
@@ -40,7 +51,18 @@ function App() {
           <Route path="/Orders" element={<Orders />}/>
           <Route path="/Reward" element={<Reward />}/>
           <Route path="/Promotion" element={<Promotion />}/>
-          <Route path="/Bonus" element={<Bonus />}>
+          <Route path="/Bonus" element={<Bonus />}/>
+          <Route path="/apply-record" element={<ApplyRecord />}/>
+          <Route path="/RedEnvelope" element={<RedEnvelope />}/>
+          <Route path="/Withdrawal" element={<Withdrawal />}/>
+          <Route path="/AddBankCard" element={<AddBankCard />}/>
+          <Route path="/Transactions" element={<Transactions />}/>
+          <Route path="/Bankcard" element={<Bankcard />}/>
+          <Route path="/AddAddress" element={<AddAddress />}/>
+          <Route path="/Complaints" element={<Complaints />}/>
+          <Route path="/AddComplaints" element={<AddComplaints />}/>
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />}/>
+          <Route path="/RiskDisclosure" element={<RiskDisclosure />}>
           </Route>
         </Routes>
       </BrowserRouter>

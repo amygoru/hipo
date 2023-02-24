@@ -156,3 +156,111 @@ div#paybox span {
 .dropdown button {
     font-size: 18px;
 }
+.balance_av_text-withrawal {
+    font-size: 24px;
+}
+p.balance_av_text-withrawal {
+    font-size: 24px;
+}
+.text_field {
+    padding: 30px 15px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #212121;
+}
+.text_field {
+    padding: 30px 15px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #212121;
+}
+span.nor {
+    font-size: 16px;
+}
+
+/* withdro */
+
+.payment_box {
+    width: 100%;
+    padding-left: 4%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.payment_text {
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #757575;
+}
+.van-radio {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.van-radio__icon {
+    flex: none;
+    height: 1em;
+    font-size: 20px;
+    line-height: 1em;
+    cursor: pointer;
+}
+.payment_box .van-radio__icon .van-icon {
+    border: transparent;
+    width: 25px;
+    display: inline-block;
+}
+.payment_box .van-radio__icon--checked .van-icon {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    width: 25px;
+    display: inline-block;
+}
+.van-icon-success:before {
+    content: "\F0C8";
+}
+.payment_box .van-radio__icon--checked .van-icon {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    width: 25px;
+    display: inline-block;
+}
+.van-radio__label {
+    margin-left: 8px;
+    color: #323233;
+    line-height: 20px;
+}
+.van-radio .text {
+    margin-left: 30px;
+    display: inline-block;
+    color: #212121;
+}
+
+.van-collapse-item .van-cell__title {
+    display: flex;
+    flex-direction: row;
+}
+.van-collapse-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 38px;
+}
+.nav_name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e4e4e;
+}
+.van-cell.van-cell--clickable.van-collapse-item__title.van-collapse-item__title--expanded {
+    margin: 1px 0px 39px 0px;
+}
+.van-cell.van-cell--clickable.van-collapse-item__title.van-collapse-item__title--expanded {
+    padding: 0px 0px 51px 0px;
+    margin: 1px 0px 39px 0px;
+}
